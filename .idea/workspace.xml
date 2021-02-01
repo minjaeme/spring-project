@@ -10,11 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6bfe6d-9816-48df-bef9-47d56074b0ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/register.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/includes/header.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring-project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/board/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/includes/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/includes/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/includes/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/includes/header.jsp" afterDir="false" />
     </list>
@@ -27,10 +30,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Tag Library Descriptor" />
-        <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="spring-beans.schema" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -53,7 +56,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ndsTD0taJfHEVGFMP39YNtgpaa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,6 +85,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.41">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardControllerTests" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="spring-project" />
       <extension name="coverage">
@@ -390,7 +408,8 @@
       <workItem from="1611900410858" duration="562000" />
       <workItem from="1611902231350" duration="143000" />
       <workItem from="1612143857314" duration="619000" />
-      <workItem from="1612151527886" duration="3516000" />
+      <workItem from="1612151527886" duration="5819000" />
+      <workItem from="1612158169136" duration="1668000" />
     </task>
     <servers />
   </component>
@@ -407,5 +426,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
