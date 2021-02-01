@@ -14,10 +14,12 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="panel panel-default">
+
 					<div class="panel-heading">Board List Page
 					<button id='regBtn' type="button" class="btn btn-xs pull-right">Register New Board</button>
 					<!-- /.panel-heading -->
 					</div>
+
 					<div class="panel-body">
 						<table class="table table-striped table-bordered table-hover">
 							<thead>
@@ -41,6 +43,27 @@
 							</c:forEach>
 						</table>
 
+						<div class="pull-right">
+							<ul class="pagination">
+
+								<c:if test="${pageMaker.prev}">
+									<li class="paginate_button previous">
+										<a href="${pageMaker.startPage -1}">Previous</a>
+									</li>
+								</c:if>
+
+								<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
+									<li class="paginate_button ${pageMaker.cri.pageNum == num ? "active":""} "><a href="${num}">${num}</a>
+									</li>
+								</c:forEach>
+
+								<c:if test="${pageMaker.next}">
+									<li class="paginate_button next"><a href="${pageMaker.endPage +1 }">Next</a>
+									</li>
+								</c:if>
+							</ul>
+						</div>
+
 						<!-- Modal 추가 -->
 						<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							<div class="modal-dialog">
@@ -60,6 +83,11 @@
 							<!-- /.modal-content -->
 						</div>
 						<!-- /.modal-dialog -->
+
+						<form id='actionForm' accept-charset="/board/list" method="get">
+							<input type='hidden' name="pageNum" value= '${pageMaker.cri.pageNum}'>
+							<input type='hidden' name="amount" value='${pageMaker.cri.amount}'>
+						</form>
 					</div>
 					<!-- /.panel-body -->
 				</div>
@@ -92,6 +120,16 @@
 
 		$("#regBtn").on("click", function () {
 			self.location = "/board/register";
+		});
+
+		var actionForm = $("#actionForm");
+
+		$(".paginate_button a").on("click", function (e) {
+			e.preventDefault();
+
+			console.log('click');
+			actionForm.find("input[name='pageNum']").val($(this).attr("href"));
+			actionForm.submit();
 		});
 	});
 </script>

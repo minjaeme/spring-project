@@ -10,9 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e6bfe6d-9816-48df-bef9-47d56074b0ee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/modify.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/get.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/board/list.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring-project.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/board/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/spring-project/WEB-INF/views/board/list.jsp" afterDir="false" />
     </list>
@@ -172,17 +171,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBCTests.TestConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BoardServiceTests.testGetList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="me.inners.persistence.*" />
+          <option name="PATTERN" value="me.inners.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="me.inners.persistence" />
-      <option name="MAIN_CLASS_NAME" value="me.inners.persistence.JDBCTests" />
-      <option name="METHOD_NAME" value="TestConnection" />
+      <option name="PACKAGE_NAME" value="me.inners.service" />
+      <option name="MAIN_CLASS_NAME" value="me.inners.service.BoardServiceTests" />
+      <option name="METHOD_NAME" value="testGetList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -368,20 +367,20 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.BoardControllerTests" />
-      <item itemvalue="JUnit.JDBCTests.TestConnection" />
       <item itemvalue="JUnit.BoardMapperTests.testPaging" />
       <item itemvalue="JUnit.BoardControllerTests.testListPaging" />
       <item itemvalue="JUnit.BoardMapperTests.testGetList" />
       <item itemvalue="JUnit.BoardControllerTests.testList" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.41" />
+      <item itemvalue="JUnit.BoardServiceTests.testGetList" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BoardServiceTests.testGetList" />
         <item itemvalue="JUnit.BoardControllerTests.testList" />
         <item itemvalue="JUnit.BoardMapperTests.testGetList" />
         <item itemvalue="JUnit.BoardControllerTests.testListPaging" />
         <item itemvalue="JUnit.BoardMapperTests.testPaging" />
-        <item itemvalue="JUnit.JDBCTests.TestConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -405,7 +404,7 @@
       <workItem from="1611902231350" duration="143000" />
       <workItem from="1612143857314" duration="619000" />
       <workItem from="1612151527886" duration="5819000" />
-      <workItem from="1612158169136" duration="3100000" />
+      <workItem from="1612158169136" duration="7640000" />
     </task>
     <servers />
   </component>
